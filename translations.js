@@ -459,7 +459,7 @@ window.BLC_TRANSLATIONS = {
   team_call: { ru: 'Позвонить', uz: 'Qo\'ng\'iroq qilish', en: 'Call', zh: '拨打电话' },
   team_practice_label: { ru: 'Практика', uz: 'Amaliyot', en: 'Practice areas', zh: '执业领域' },
 
-  team_1_role: { ru: 'Управляющий Партнер', uz: 'Boshqaruvchi Hamkor', en: 'Managing Partner', zh: '管理合伙人' },
+  team_1_role: { ru: 'Managing Partner', uz: 'Managing Partner', en: 'Managing Partner', zh: '管理合伙人' },
   team_1_name_ru: {
     ru: 'Шайназаров Шерзод Бахтиёрович',
     uz: 'Shaynazarov Sherzod Baxtiyorovich',
@@ -488,7 +488,7 @@ window.BLC_TRANSLATIONS = {
     zh: '执照编号 220003 · 注册号 L-70665005'
   },
 
-  team_2_role: { ru: 'Адвокат', uz: 'Advokat', en: 'Attorney at Law', zh: '执业律师' },
+  team_2_role: { ru: 'Attorney at Law', uz: 'Attorney at Law', en: 'Attorney at Law', zh: '执业律师' },
   team_2_name_ru: {
     ru: 'Болтабоев Мехриддин Салохиддин ўғли',
     uz: 'Boltaboyev Mexriddin Salohiddin o\'g\'li',
@@ -517,7 +517,7 @@ window.BLC_TRANSLATIONS = {
     zh: '执照编号 682593 · 注册号 L-70666764'
   },
 
-  team_3_role: { ru: 'Юридический Советник', uz: 'Yuridik Maslahatchi', en: 'Legal Counsel', zh: '法务顾问' },
+  team_3_role: { ru: 'Legal Counsel', uz: 'Legal Counsel', en: 'Legal Counsel', zh: '法务顾问' },
   team_3_name_ru: {
     ru: 'Атаханова Саида Мансурбек кизи',
     uz: 'Ataxonova Saida Mansurbek qizi',
@@ -662,8 +662,8 @@ window.BLC_TRANSLATIONS = {
     zh: 'BUSINESS LAW CONSULTING —— 专注于安全、高效与成果的企业法律支持服务。'
   },
   footer_addr: {
-    ru: 'г.Ташкент, Мирзо-Улугбекский район, проспект Мустакиллик, 107',
-    uz: 'Toshkent shahri, Mirzo Ulugʻbek tumani, Mustaqillik shoh koʻchasi, 107,
+    ru: 'г. Ташкент, Мирзо-Улугбекский район, проспект Мустакиллик, 107',
+    uz: 'Toshkent shahri, Mirzo Ulugʻbek tumani, Mustaqillik shoh koʻchasi, 107',
     en: '107 Mustaqillik Avenue, Mirzo-Ulugbek District, Tashkent, Uzbekistan',
     zh: '乌兹别克斯坦，塔什干市，米尔佐·乌鲁格别克区，独立大道107号'
   },
