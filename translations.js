@@ -662,10 +662,10 @@ window.BLC_TRANSLATIONS = {
     zh: 'BUSINESS LAW CONSULTING —— 专注于安全、高效与成果的企业法律支持服务。'
   },
   footer_addr: {
-    ru: 'Ташкент, Чиланзарский район, ул. Амира Темура, 107',
-    uz: 'Toshkent, Chilonzor tumani, Amir Temur ko\'chasi, 107',
-    en: 'Tashkent, Chilanzar district, Amir Temur str., 107',
-    zh: '塔什干市奇兰扎尔区阿米尔·帖木儿街107号'
+    ru: 'г.Ташкент, Мирзо-Улугбекский район, проспект Мустакиллик, 107',
+    uz: 'Toshkent shahri, Mirzo Ulugʻbek tumani, Mustaqillik shoh koʻchasi, 107,
+    en: '107 Mustaqillik Avenue, Mirzo-Ulugbek District, Tashkent, Uzbekistan',
+    zh: '乌兹别克斯坦，塔什干市，米尔佐·乌鲁格别克区，独立大道107号'
   },
   footer_copy: {
     ru: '© 2026 Business Law Consulting. Все права защищены.',
