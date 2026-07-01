@@ -459,7 +459,7 @@ window.BLC_TRANSLATIONS = {
   team_call: { ru: 'Позвонить', uz: 'Qo\'ng\'iroq qilish', en: 'Call', zh: '拨打电话' },
   team_practice_label: { ru: 'Практика', uz: 'Amaliyot', en: 'Practice areas', zh: '执业领域' },
 
-  team_1_role: { ru: 'Managing Partner', uz: 'Managing Partner', en: 'Managing Partner', zh: '管理合伙人' },
+  team_1_role: { ru: 'Управляющий Партнер', uz: 'Boshqaruvchi hamkor', en: 'Managing Partner', zh: '管理合伙人' },
   team_1_name_ru: {
     ru: 'Шайназаров Шерзод Бахтиёрович',
     uz: 'Shaynazarov Sherzod Baxtiyorovich',
@@ -488,7 +488,7 @@ window.BLC_TRANSLATIONS = {
     zh: '执照编号 220003 · 注册号 L-70665005'
   },
 
-  team_2_role: { ru: 'Attorney at Law', uz: 'Attorney at Law', en: 'Attorney at Law', zh: '执业律师' },
+  team_2_role: { ru: 'Адвокат', uz: 'Advokat', en: 'Attorney at Law', zh: '执业律师' },
   team_2_name_ru: {
     ru: 'Болтабоев Мехриддин Салохиддин ўғли',
     uz: 'Boltaboyev Mexriddin Salohiddin o\'g\'li',
@@ -517,7 +517,7 @@ window.BLC_TRANSLATIONS = {
     zh: '执照编号 682593 · 注册号 L-70666764'
   },
 
-  team_3_role: { ru: 'Legal Counsel', uz: 'Legal Counsel', en: 'Legal Counsel', zh: '法务顾问' },
+  team_3_role: { ru: 'Юридический советник', uz: 'Yuridik maslahatchi', en: 'Legal Counsel', zh: '法务顾问' },
   team_3_name_ru: {
     ru: 'Атаханова Саида Мансурбек кизи',
     uz: 'Ataxonova Saida Mansurbek qizi',
