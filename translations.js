@@ -511,10 +511,10 @@ window.BLC_TRANSLATIONS = {
     zh: '行政法'
   },
   team_2_license: {
-    ru: 'Лиц. №220003 · Рег. L-70665005',
-    uz: 'Litsenziya №220003 · Ro\'yxat L-70665005',
-    en: 'License No. 220003 · Reg. L-70665005',
-    zh: '执照编号 220003 · 注册号 L-70665005'
+    ru: 'Лиц. №682593 · Рег. L-70666764',
+    uz: 'Litsenziya №682593 · Ro\'yxat L-70666764',
+    en: 'License No. 682593 · Reg. L-70666764',
+    zh: '执照编号 682593 · 注册号 L-70666764'
   },
 
   team_3_role: { ru: 'Юридический Советник', uz: 'Yuridik Maslahatchi', en: 'Legal Counsel', zh: '法务顾问' },
