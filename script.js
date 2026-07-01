@@ -1,7 +1,5 @@
-/* =====================================================
-   BLC — script.js
-   Переключение языков, форма, FAQ, скролл-эффекты
-   ===================================================== */
+  var TG_BOT_TOKEN = '8966130067:AAFe7Y2yEQsRJQxbFVvIUaGHTtVKhdMecSI';
+  var TG_CHAT_ID   = '-1003723003757';
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -238,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var originalText = btn.textContent;
     btn.textContent = '...';
 
-    setTimeout(function () {
+    function showSuccess() {
       if (fields) fields.style.display = 'none';
       if (success) success.style.display = 'block';
 
@@ -253,7 +251,50 @@ document.addEventListener('DOMContentLoaded', function () {
 
       btn.disabled = false;
       btn.textContent = originalText;
-    }, 600);
+    }
+
+    function showError() {
+      btn.disabled = false;
+      btn.textContent = originalText;
+      alert('Не удалось отправить заявку. Пожалуйста, позвоните нам напрямую: +998 90 888-44-66');
+    }
+
+    // Проверка, что токен и chat_id заполнены
+    if (!TG_BOT_TOKEN || TG_BOT_TOKEN.indexOf('ВСТАВЬ') !== -1 ||
+        !TG_CHAT_ID || TG_CHAT_ID.indexOf('ВСТАВЬ') !== -1) {
+      console.error('[TG] Не заполнены TG_BOT_TOKEN / TG_CHAT_ID в script.js — заявка не отправлена.');
+      showError();
+      return;
+    }
+
+    var text =
+      '🆕 Новая заявка с сайта BLC\n\n' +
+      '👤 Имя: ' + name + '\n' +
+      '📞 Телефон: ' + phone + '\n' +
+      (message ? '💬 Сообщение: ' + message + '\n' : '') +
+      '\n🌐 Страница: ' + window.location.href;
+
+    fetch('https://api.telegram.org/bot' + TG_BOT_TOKEN + '/sendMessage', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: TG_CHAT_ID,
+        text: text
+      })
+    })
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data && data.ok) {
+          showSuccess();
+        } else {
+          console.error('[TG] Ошибка ответа Telegram:', data);
+          showError();
+        }
+      })
+      .catch(function (err) {
+        console.error('[TG] Ошибка сети при отправке заявки:', err);
+        showError();
+      });
   };
 
 });
