@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
       var entry = T[key];
       if (entry && entry[lang]) {
         el.textContent = entry[lang];
+      } else if (entry && !entry[lang]) {
+        console.warn('[i18n] Нет перевода для ключа "' + key + '" на языке "' + lang + '"');
+      } else if (!entry) {
+        console.warn('[i18n] Ключ "' + key + '" отсутствует в translations.js');
       }
     }
 
@@ -68,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var optionButtons = document.querySelectorAll('.lang-option');
     for (var k = 0; k < optionButtons.length; k++) {
       optionButtons[k].addEventListener('click', function () {
+        // Живое переключение языка — без перезагрузки страницы
         applyLang(this.getAttribute('data-lang'));
         switcher.classList.remove('open');
         current.setAttribute('aria-expanded', 'false');
@@ -183,10 +188,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* -----------------------------------------------------
      5. ОБРАБОТКА ОШИБОК ЗАГРУЗКИ ИЗОБРАЖЕНИЙ
-     Если картинка не загрузилась (неверный путь / регистр
-     букв в имени файла / файл отсутствует на сервере),
-     не оставляем "битую" иконку, а помечаем блок классом
-     img-error, который можно стилизовать в CSS.
      ----------------------------------------------------- */
   var allImages = document.querySelectorAll('img');
   for (var im = 0; im < allImages.length; im++) {
@@ -237,8 +238,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var originalText = btn.textContent;
     btn.textContent = '...';
 
-    // ЗАМЕНИТЕ этот блок на реальный запрос к вашему серверу/боту,
-    // например fetch('/api/lead', { method: 'POST', body: JSON.stringify({name, phone, message}) })
     setTimeout(function () {
       if (fields) fields.style.display = 'none';
       if (success) success.style.display = 'block';
