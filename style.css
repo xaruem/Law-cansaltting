@@ -55,7 +55,7 @@ body { font-family: 'Open Sans', sans-serif; color: var(--text-dark); background
 .social-btn.telegram { background: #0088cc; }
 
 /* =====================================================
-   LANGUAGE SWITCHER — одна кнопка + выпадающий список
+   LANGUAGE SWITCHER
    ===================================================== */
 .lang-switcher { position: relative; flex-shrink: 0; }
 .lang-current {
@@ -255,6 +255,8 @@ section { padding: 80px 24px; }
 .team-section .section-subtitle {
   color: #8aa8c8;
 }
+
+/* team-grid: 2 columns, up to 3 cards, 3rd centered on wide layouts */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -404,7 +406,6 @@ section { padding: 80px 24px; }
 .form-section .section-title { color: #fff; }
 .form-section .section-subtitle { color: #94b4cc; }
 
-/* Кнопки связи над формой */
 .form-contact-row {
   display: flex;
   justify-content: center;
@@ -501,7 +502,7 @@ section { padding: 80px 24px; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; color: #6a8aaa; font-size: 13px; }
 
 /* =====================================================
-   Google Translate — скрыть баннер
+   Google Translate hide banner
    ===================================================== */
 .goog-te-banner-frame { display: none !important; }
 body { top: 0 !important; }
@@ -509,7 +510,7 @@ body { top: 0 !important; }
 #google_translate_element { display: none; }
 
 /* =====================================================
-   TABLET (≤1024px)
+   TABLET (<=1024px)
    ===================================================== */
 @media (max-width: 1024px) {
   .hero-title-brand { font-size: 42px; }
@@ -522,7 +523,7 @@ body { top: 0 !important; }
 }
 
 /* =====================================================
-   MOBILE (≤768px)
+   MOBILE (<=768px)
    ===================================================== */
 @media (max-width: 768px) {
   .header-inner { height: 56px; padding: 0 16px; }
@@ -554,7 +555,6 @@ body { top: 0 !important; }
   .when-grid { grid-template-columns: 1fr; }
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
 
-  /* Problem / service / when card text bigger on mobile */
   .problem-card { font-size: 19px; font-weight: 600; padding: 24px 20px; line-height: 1.45; }
   .problem-card .problem-icon { width: 40px; height: 40px; margin-bottom: 14px; }
   .problem-card .problem-icon svg { width: 20px; height: 20px; }
@@ -563,14 +563,12 @@ body { top: 0 !important; }
   .who-tag { font-size: 15px; }
   .faq-question { font-size: 16px; }
 
-  /* Team mobile */
   .team-grid { grid-template-columns: 1fr; max-width: 420px; }
   .team-photo-wrap { aspect-ratio: 3/3.2; }
   .team-photo-overlay { opacity: 1; }
   .team-name { font-size: 18px; }
   .team-bio { font-size: 15px; }
 
-  /* Form contact buttons */
   .form-contact-row { gap: 10px; }
   .form-contact-btn { padding: 14px 20px; font-size: 15px; flex: 1; justify-content: center; min-width: 0; }
 
